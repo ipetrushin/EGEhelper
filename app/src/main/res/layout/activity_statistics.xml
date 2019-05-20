@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Statistics">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/back"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="3"
+            android:adjustViewBounds="false"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Добавить предмет"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/Work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Решать!"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
